@@ -4,25 +4,58 @@
 #include <iostream>
 using namespace std;
 
+
+int add(int x, int y); //4
 int main()
 {
-	Complex1 c1(1, 2);
-	Complex1 c2(2, 3);
-	Complex1 c3 = c1.add(c2);
-	c1.display();
-	cout << "+";
-	c2.display();
-	cout << "=";
-	c3.display();
-	cout << endl;
+	//// 1
+	//Complex1 c1(1, 2);
+	//Complex1 c2(2, 3);
+	//Complex1 c3 = c1.add(c2);
+	//c1.display();
+	//cout << "+";
+	//c2.display();
+	//cout << "=";
+	//c3.display();
+	//cout << endl;
 
-	c3 = c1.mul(10.0);
-	c1.display();
-	cout << "*10=";
-	c3.display();
-	cout << endl;
+	//c3 = c1.mul(10.0);
+	//c1.display();
+	//cout << "*10=";
+	//c3.display();
+	//cout << endl;
 
-	return 0;
+	//return 0;
+
+	////2
+	//std::cout << "Hello C++" << std::endl;
+	//return 0;
+
+	////3
+	//int score;
+	//cout << "점수를 입력";
+	//cin >> score;
+	//if (score >= 90)
+	//	cout << "A" << endl;
+	//else if (score >= 80)
+	//	cout << "B" << endl;
+	//else if (score >= 70)
+	//	cout << "C" << endl;
+	//else if (score >= 60)
+	//	cout << "D" << endl;
+	//else
+	//	cout << "F" << endl;
+
+	// 4
+	int a, b;
+	cout << "두개의 정수를 입력";
+	cin >> a >> b;
+	cout << "두개의 정수의 합" << add(a, b) << endl;
+
+}
+
+int add(int x, int y) {
+	return x + y;
 }
 #include "pch.h"
 #include <iostream>
